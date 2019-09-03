@@ -18,9 +18,11 @@
      -a 全部容器
      -l 前一个容器
      -n 3 过去启动的容器
-     -q
+     -q 查看当前运行的容器ID
  暂停容器 docker stop containerID
+ 强制停止 docker kill containerID
  删除容器 docker rm containerID
+ 删除多个容器 docker ps -a -q | xargs docker rm,docker rm -f $(docker ps -a -q)
  启动容器 docker start containerID或容器名
  重新启动 docker restart containerID
  退出容器 exit,ctrl+q+p//退出到宿主机
