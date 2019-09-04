@@ -31,7 +31,14 @@
  日志 docker logs 容器ID
       docker logs -t -f 容器ID
  查看容器 docker top 
- 查看容器内部 docker inspect 
+ 查看容器内部 docker inspect 容器ID
+ attach 进入容器内部启动命令终端，不会开启新的进程 
+      docker attach 容器ID,进入内部
+ exec 进入容器内部打开新的终端，并启动新的进程
+      docker exec -t 容器ID  ls -l /tmp，//在外部实现结果
+      docker exec -t 容器ID /bin/bash//进入内部
+ 容器文件复制docker cp 容器ID 目录路径  新目录路径
+      
  
  
  
