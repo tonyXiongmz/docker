@@ -38,6 +38,8 @@
       docker exec -t 容器ID  ls -l /tmp，//在外部实现结果
       docker exec -t 容器ID /bin/bash//进入内部
  容器文件复制docker cp 容器ID 目录路径  新目录路径
+ 
+ 生成新镜像 docker commit -a='name' -m='shuoming' 容器ID 镜像名
       
  
  
