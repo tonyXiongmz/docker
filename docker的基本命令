@@ -25,6 +25,8 @@
  删除多个容器 docker ps -a -q | xargs docker rm,docker rm -f $(docker ps -a -q)
  启动容器 docker start containerID或容器名
  重新启动 docker restart containerID
- 退出容器 exit,ctrl+q+p//退出到宿主机
+ 退出容器 exit停止退出,ctrl+q+p不停止退出
+ 
+ 
  
 
