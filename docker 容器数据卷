@@ -1,0 +1,2 @@
+docker容器数据卷是为了做持久化，为了保存数据在docker中，使用数据卷
+docker run -it -v 虚拟机绝对路径：容器目录 镜像ID 
