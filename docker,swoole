@@ -1,0 +1,6 @@
+1、启动
+docker restart swoft
+2、进入
+docker exec -it swoft sh
+3、系统打印信息
+swoftcli run -c http:start -b bin/swoft
