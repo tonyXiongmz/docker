@@ -47,3 +47,10 @@ docker exec -it cyt_nginx /bin/bash
 
 cd etc/nginx/conf.d/
 vi default.conf
+
+
+
+容器内安装vi
+apt-get update
+apt-get install vim
+apt-get install rpm //ps
